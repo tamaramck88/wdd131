@@ -1,38 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 – Dynamic Web Fundamentals – Tamara McKnight</title>
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Tamara McKnight, home page overview">
-  <meta name="author" content="Tamara McKnight">
-  <link rel="stylesheet" href="styles.css">
-  <script src="scripts/getdates.js" defer></script>
-</head>
 <body>
+  <!-- HEADER -->
   <header>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <div class="top-bar">WDD 131 – Dynamic Web Fundamentals</div>
+
     <nav>
-      <a href="https://www.linkedin.com/">LinkedIn</a>
-      <a href="https://byupw.instructure.com/">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures">Scriptures</a>
-      <a href="#">Final Project Folder</a>
+      <ul>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scriptures</a></li>
+        <li><a href="#">Final Project Folder</a></li>
+      </ul>
     </nav>
   </header>
 
-    <main>
-    <h1>Tamara McKnight</h1>
+  <!-- PAGE TITLE -->
+  <h1>Tamara McKnight</h1>
 
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- ABOUT ME -->
     <section class="card">
-      <h2>About Me</h2>
-      <img src="images/Me.jpeg" alt="Me">
-      <p>My name is Tamara McKnight, I am 32 years old and I stay in Johannesburg, South Africa. I enjoy dancing, singing, and cooking. I would like to become a software engineer and open my own business.</p>
+      <div class="card-header">About Me</div>
+
+      <div class="card-body about-grid">
+        <p>
+          My name is Tamara McKnight, I am 32 years old and I stay in Johannesburg,
+          South Africa. I enjoy dancing, singing, and cooking. I would like to
+          become a software engineer and open my own business.
+        </p>
+
+        <img src="images/Me.jpeg" alt="Photo of Tamara McKnight" class="profile-img">
+      </div>
     </section>
 
+    <!-- COURSE PROJECTS -->
     <section class="card">
-      <h2>Course Projects</h2>
-      <img src="images/SD.png" alt="Software Development">
-      <p>I am in my second year of my degree and I am absolutely loving every moment.</p>
+      <div class="card-header">Course Projects</div>
+
+      <div class="card-body">
+        <img src="images/SD.png" alt="Software Development">
+        <p>I am in my second year of my degree and I am absolutely loving every moment.</p>
+      </div>
     </section>
   </main>
 
@@ -42,4 +50,3 @@
     <p id="lastModified"></p>
   </footer>
 </body>
-</html>
