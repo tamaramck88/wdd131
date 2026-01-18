@@ -1,60 +1,71 @@
-/* =====================
-   GLOBAL RESET
-===================== */
+/* =========================
+   ROOT VARIABLES
+========================= */
+:root {
+  --primary-blue: #1f4f72;
+  --dark-gray: #333;
+  --light-gray: #f5f5f5;
+  --border-gray: #ccc;
+}
+
+/* =========================
+   RESET & BASE
+========================= */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
+  background-color: white;
   color: #222;
 }
 
-/* =====================
-   HEADER
-===================== */
+/* =========================
+   TOP COURSE BAR
+========================= */
 header {
-  background-color: #1f4f72;
+  background-color: var(--primary-blue);
   color: white;
   text-align: center;
-  padding: 12px 0;
+  padding: 15px 0;
   font-weight: bold;
 }
 
-/* =====================
-   NAVIGATION
-===================== */
+/* =========================
+   NAVIGATION BAR
+========================= */
 nav {
-  background-color: #333;
+  background-color: var(--dark-gray);
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  margin: 0;
   padding: 10px 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  font-weight: 500;
 }
 
-/* =====================
-   MAIN TITLE
-===================== */
+/* =========================
+   PAGE TITLE
+========================= */
 h1 {
   text-align: center;
   margin: 25px 0;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
-/* =====================
-   MAIN GRID LAYOUT
-===================== */
+/* =========================
+   MAIN TWO-COLUMN LAYOUT
+========================= */
 main {
   max-width: 1100px;
   margin: 0 auto 40px;
@@ -65,55 +76,110 @@ main {
   gap: 25px;
 }
 
-/* =====================
-   CARD STYLE
-===================== */
-section {
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background-color: #fff;
+/* =========================
+   CARD STYLES
+========================= */
+.card {
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  background-color: white;
+  overflow: hidden;
 }
 
-section h2 {
-  background-color: #1f4f72;
+.card-header {
+  background-color: var(--primary-blue);
   color: white;
   padding: 10px;
-  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
 }
 
-/* =====================
-   ABOUT ME CONTENT
-===================== */
-.about-content {
+.card-body {
   padding: 15px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 15px;
 }
 
-.about-content img {
+/* =========================
+   ABOUT ME CONTENT
+========================= */
+.about-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 15px;
+  align-items: start;
+}
+
+.profile-img {
   width: 100%;
-  max-width: 150px;   /* 🔥 FIXES GIANT IMAGE */
+  max-width: 140px;
   height: auto;
   border-radius: 4px;
-  justify-self: end;
 }
 
-/* =====================
-   COURSE PROJECTS
-===================== */
-.projects {
-  margin-top: 25px;
-  padding: 15px;
+/* =========================
+   LOCATION SECTION
+========================= */
+.location {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-gray);
 }
 
-/* =====================
+.location h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 15px;
+  align-items: start;
+}
+
+.flag-img {
+  width: 100%;
+  max-width: 120px;
+  border: 1px solid var(--border-gray);
+}
+
+.flag-caption {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* =========================
+   RESOURCES LIST
+========================= */
+.resources ul {
+  padding-left: 20px;
+}
+
+.resources li {
+  margin-bottom: 8px;
+}
+
+.resources a {
+  color: #0066cc;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
    FOOTER
-===================== */
+========================= */
 footer {
-  background-color: #1f4f72;
+  background-color: var(--primary-blue);
   color: white;
   text-align: center;
-  padding: 15px;
-  font-size: 0.85rem;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+}
+
+footer .modified {
+  color: yellow;
+  font-size: 0.8rem;
 }
