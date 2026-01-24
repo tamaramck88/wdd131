@@ -9,6 +9,10 @@
   <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Tamara McKnight. HTML, CSS, JavaScript, frontend web development.">
   <meta name="author" content="Tamara McKnight">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/base.css">
 </head>
 
@@ -27,7 +31,7 @@
 
   <main>
 
-    <h1 class="page-title">Tamara McKnight</h1>
+    <h1>Tamara McKnight</h1>
 
     <section class="card about">
       <h2>About Me</h2>
@@ -77,14 +81,12 @@
     <p>
       &copy; <span id="currentyear"></span> Tamara McKnight | South Africa
     </p>
-    <p id="lastModified"></p>
+    <p>
+      Last Modified: <span id="lastModified"></span>
+    </p>
   </footer>
 
-  <script>
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent =
-      "Last Modified: " + document.lastModified;
-  </script>
+  <script src="scripts/getdates.js" defer></script>
 
 </body>
 </html>
