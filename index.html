@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>WDD 131 – Dynamic Web Fundamentals – Tamara McKnight</title>
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Tamara McKnight. Web development, HTML, CSS, JavaScript, frontend fundamentals.">
+
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Tamara McKnight. HTML, CSS, JavaScript, frontend web development.">
   <meta name="author" content="Tamara McKnight">
-  <link rel="stylesheet" href="Styles/base.css">
+
+  <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header>
     <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
 
@@ -22,20 +26,23 @@
     </nav>
   </header>
 
+  <!-- MAIN -->
   <main>
     <h1>Tamara McKnight</h1>
 
+    <!-- ABOUT ME CARD -->
     <section class="card">
       <h2>About Me</h2>
 
       <div class="about-grid">
         <p>
-          My name is Tamara McKnight. I am 32 years old and I live in Johannesburg,
-          South Africa. I enjoy dancing, singing, and cooking. I am busy with my second year in my degree and I am loving every moment.
-          I am currently working as a Sales Manager for a perfume manufacturing company, but I would like to transition into web development full time once I graduate.
+          My name is Tamara McKnight. I am 32 years old and live in Johannesburg,
+          South Africa. I enjoy dancing, singing, and cooking. I am currently
+          working as a Sales Manager for a perfume manufacturing company and
+          would like to transition into web development full time after graduating.
         </p>
 
-        <img src="images/Me_new.jpg" alt="Photo of Tamara McKnight">
+        <img src="images/Me.jpeg" alt="Photo of Tamara McKnight">
       </div>
 
       <h3>Johannesburg, South Africa</h3>
@@ -43,17 +50,18 @@
       <div class="location-grid">
         <div>
           <img src="images/sa-flag.png" alt="Official Flag of South Africa">
-          <p>Official Flag of South Africa</p>
+          <p class="caption">Official Flag of South Africa</p>
         </div>
 
         <p>
-          South Africa loves variety; it has three capitals, eleven official languages, 21 National Parks and ten UNESCO World Heritage Sites.
-          The country is famous for its spectacular landscapes and a diversity of African animals. 
-          The Kruger National Park, one of the largest game reserves in Africa, is known for its stunning game viewing opportunities.
+          South Africa is known for its cultural diversity, beautiful landscapes,
+          and wildlife. It has eleven official languages, world-class cities,
+          and famous national parks such as Kruger National Park.
         </p>
       </div>
     </section>
 
+    <!-- RESOURCES CARD -->
     <section class="card">
       <h2>Web Dev Resources</h2>
 
@@ -67,6 +75,7 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>
       &copy; <span id="currentyear"></span> Tamara McKnight | South Africa
@@ -74,9 +83,11 @@
     <p id="lastModified"></p>
   </footer>
 
+  <!-- JAVASCRIPT -->
   <script>
     document.getElementById("currentyear").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    document.getElementById("lastModified").textContent =
+      "Last Modified: " + document.lastModified;
   </script>
 
 </body>
