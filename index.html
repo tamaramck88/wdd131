@@ -9,7 +9,7 @@
   <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Tamara McKnight. HTML, CSS, JavaScript, frontend web development.">
   <meta name="author" content="Tamara McKnight">
 
-  <link rel="stylesheet" href="Styles/base.css">
+  <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
@@ -28,10 +28,11 @@
 
   <!-- MAIN -->
   <main>
-    <h1>Tamara McKnight</h1>
 
-    <!-- ABOUT ME CARD -->
-    <section class="card">
+    <h1 class="page-title">Tamara McKnight</h1>
+
+    <!-- ABOUT ME -->
+    <section class="card about">
       <h2>About Me</h2>
 
       <div class="about-grid">
@@ -42,14 +43,14 @@
           would like to transition into web development full time after graduating.
         </p>
 
-        <img src="images/Me_new.jpg" alt="Photo of Tamara McKnight">
+        <img src="images/Me.jpeg" alt="Photo of Tamara McKnight">
       </div>
 
       <h3>Johannesburg, South Africa</h3>
 
       <div class="location-grid">
         <div>
-          <img src="images/sa_flag.jpg" alt="Official Flag of South Africa">
+          <img src="images/sa-flag.png" alt="Official Flag of South Africa">
           <p class="caption">Official Flag of South Africa</p>
         </div>
 
@@ -61,8 +62,8 @@
       </div>
     </section>
 
-    <!-- RESOURCES CARD -->
-    <section class="card">
+    <!-- RESOURCES -->
+    <section class="card resources">
       <h2>Web Dev Resources</h2>
 
       <ul>
@@ -73,6 +74,7 @@
         <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
       </ul>
     </section>
+
   </main>
 
   <!-- FOOTER -->
@@ -83,7 +85,6 @@
     <p id="lastModified"></p>
   </footer>
 
-  <!-- JAVASCRIPT -->
   <script>
     document.getElementById("currentyear").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent =

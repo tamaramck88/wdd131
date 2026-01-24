@@ -1,11 +1,6 @@
-/* =========================
-   GOOGLE FONTS
-========================= */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Roboto:wght@400;500&display=swap');
 
-/* =========================
-   VARIABLES
-========================= */
+/* VARIABLES */
 :root {
   --primary-blue: #1f4f72;
   --dark-gray: #333;
@@ -14,9 +9,7 @@
   --accent-blue: #2f6fa3;
 }
 
-/* =========================
-   RESET & BASE
-========================= */
+/* RESET */
 * {
   box-sizing: border-box;
 }
@@ -29,16 +22,13 @@ body {
   line-height: 1.6;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 header {
   background-color: var(--primary-blue);
   color: white;
   text-align: center;
 }
 
-/* course title */
 #course-title {
   display: block;
   padding: 15px 0;
@@ -47,9 +37,7 @@ header {
   font-weight: 600;
 }
 
-/* =========================
-   NAVIGATION (FLEX)
-========================= */
+/* NAV */
 nav {
   background-color: var(--dark-gray);
   display: flex;
@@ -69,19 +57,7 @@ nav a:hover {
   background-color: var(--accent-blue);
 }
 
-/* =========================
-   PAGE TITLE
-========================= */
-h1 {
-  text-align: center;
-  margin: 30px 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-}
-
-/* =========================
-   MAIN GRID
-========================= */
+/* MAIN GRID — THIS IS THE FIX */
 main {
   max-width: 1100px;
   margin: 0 auto 40px;
@@ -89,12 +65,30 @@ main {
 
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "title title"
+    "about resources";
   gap: 25px;
 }
 
-/* =========================
-   CARDS
-========================= */
+/* GRID AREAS */
+.page-title {
+  grid-area: title;
+  text-align: center;
+  margin: 30px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.about {
+  grid-area: about;
+}
+
+.resources {
+  grid-area: resources;
+}
+
+/* CARDS */
 .card {
   background-color: white;
   border: 1px solid var(--border-gray);
@@ -109,12 +103,9 @@ main {
   padding: 12px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
 }
 
-/* =========================
-   ABOUT GRID
-========================= */
+/* ABOUT GRID */
 .about-grid {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -123,14 +114,12 @@ main {
 }
 
 .about-grid img {
-  width: 100%;
   max-width: 140px;
+  width: 100%;
   border-radius: 5px;
 }
 
-/* =========================
-   LOCATION
-========================= */
+/* LOCATION */
 .card h3 {
   text-align: center;
   margin: 10px 0;
@@ -155,9 +144,7 @@ main {
   font-style: italic;
 }
 
-/* =========================
-   RESOURCES
-========================= */
+/* RESOURCES */
 .card ul {
   padding: 15px 30px 20px;
 }
@@ -175,9 +162,7 @@ main {
   text-decoration: underline;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 footer {
   background-color: var(--primary-blue);
   color: white;
