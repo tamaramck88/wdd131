@@ -3,90 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>WDD 131 – Dynamic Web Fundamentals – Tamara McKnight</title>
-
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Tamara McKnight. HTML, CSS, JavaScript, frontend web development.">
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Tamara McKnight">
   <meta name="author" content="Tamara McKnight">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
 
-  <header>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+<header>
+  <div class="banner">WDD 131: Dynamic Web Fundamentals</div>
+  <nav>
+    <ul>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">Canvas</a></li>
+      <li><a href="#">Scripture</a></li>
+      <li><a href="#">Final Project</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <nav>
-      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
-      <a href="#">Final Project</a>
-    </nav>
-  </header>
+<main>
+  <h1>Tamara McKnight</h1>
 
-  <main>
+  <!-- MAIN GRID -->
+  <div class="grid">
 
-    <h1>Tamara McKnight</h1>
-
-    <section class="card about">
+    <!-- ABOUT ME CARD -->
+    <section class="card about-card">
       <h2>About Me</h2>
 
-      <div class="about-grid">
+      <div class="about-content">
         <p>
           My name is Tamara McKnight. I am 32 years old and live in Johannesburg,
           South Africa. I enjoy dancing, singing, and cooking. I am currently
-          working as a Sales Manager for a perfume manufacturing company and
-          would like to transition into web development full time after graduating.
+          studying web development and would like to become a software engineer.
         </p>
 
-        <img src="images/me_new.jpg" alt="A full photo of Tamara McKnight showing her smiling face.">
+        <img src="images/Me.jpeg" alt="Photo of Tamara McKnight">
       </div>
 
       <h3>Johannesburg, South Africa</h3>
 
-      <div class="location-grid">
-        <div>
-          <img src="images/sa_flag.jpg" alt="Official Flag of South Africa">
-          <p class="caption">Official Flag of South Africa</p>
-        </div>
+      <div class="location">
+        <figure>
+          <img src="images/sa-flag.png" alt="Flag of South Africa">
+          <figcaption>Official Flag of South Africa</figcaption>
+        </figure>
 
         <p>
           South Africa is known for its cultural diversity, beautiful landscapes,
-          and wildlife. It has eleven official languages, world-class cities,
-          and famous national parks such as Kruger National Park.
+          and wildlife. It has eleven official languages and famous national parks
+          such as Kruger National Park.
         </p>
       </div>
     </section>
 
-    <section class="card resources">
+    <!-- RESOURCES CARD -->
+    <section class="card resources-card">
       <h2>Web Dev Resources</h2>
-
       <ul>
-        <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
-        <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
-        <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
-        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+        <li><a href="#">Dev.to Community</a></li>
+        <li><a href="#">Smashing Magazine</a></li>
+        <li><a href="#">CSS Tricks</a></li>
+        <li><a href="#">W3 Schools</a></li>
+        <li><a href="#">Udemy</a></li>
       </ul>
     </section>
 
-  </main>
+  </div>
+</main>
 
-  <footer>
-    <p>
-      &copy; <span id="currentyear"></span>2026 | Tamara McKnight | South Africa
-    </p>
-    <p>
-      Last Modified: <span id="lastModified"></span>
-    </p>
-  </footer>
-
-  <script src="scripts/getdates.js" defer></script>
+<footer>
+  <p>© <span id="year"></span> Tamara McKnight | South Africa</p>
+  <p id="lastModified"></p>
+</footer>
 
 </body>
 </html>
