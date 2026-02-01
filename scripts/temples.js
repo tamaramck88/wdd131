@@ -1,13 +1,12 @@
-const year = document.querySelector("#year");
-const lastModified = document.querySelector("#lastModified");
+// Footer Dates
+document.querySelector("#year").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent = document.lastModified;
 
-year.textContent = new Date().getFullYear();
-lastModified.textContent = document.lastModified;
-
+// Hamburger Menu
 const menuButton = document.querySelector("#menu-button");
-const nav = document.querySelector("#nav-menu");
+const navMenu = document.querySelector("#nav-menu");
 
 menuButton.addEventListener("click", () => {
-  nav.classList.toggle("open");
-  menuButton.textContent = nav.classList.contains("open") ? "✖" : "☰";
+  navMenu.classList.toggle("open");
+  menuButton.textContent = navMenu.classList.contains("open") ? "✖" : "☰";
 });
