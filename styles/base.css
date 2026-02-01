@@ -1,0 +1,141 @@
+/* ---------- Global ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: #1f4f73;
+  color: #fff;
+}
+
+#course-title {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ddd;
+}
+
+/* ---------- Main ---------- */
+main {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.name {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- Layout Grid ---------- */
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.card h3 {
+  background-color: #1f4f73;
+  color: #fff;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+/* ---------- About Section ---------- */
+.about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.card h4 {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* ---------- Location ---------- */
+.location {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.location img {
+  width: 100%;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+/* ---------- Resources ---------- */
+.resources {
+  padding: 1rem 2rem;
+}
+
+.resources li {
+  margin-bottom: 0.5rem;
+}
+
+.resources a {
+  color: #003366;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #1f4f73;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
