@@ -7,38 +7,35 @@
   <meta name="author" content="Tamara McKnight">
   <title>Temple Album</title>
 
-  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Mobile First CSS -->
   <link rel="stylesheet" href="styles/temples.css">
-  <link rel="stylesheet" href="styles/temples_large.css">
-
-  <!-- JavaScript -->
+  <link rel="stylesheet" href="styles/temples-large.css">
   <script src="scripts/temples.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <h1>Temple Album</h1>
+<header>
+  <div class="header-content">
+    <span class="site-title">Temple Album</span>
+    <button id="menu-button">☰</button>
+  </div>
 
-    <button id="menu-button" aria-label="Menu">☰</button>
+  <nav id="nav-menu">
+    <a href="#">Home</a>
+    <a href="#">Old</a>
+    <a href="#">New</a>
+    <a href="#">Large</a>
+    <a href="#">Small</a>
+  </nav>
+</header>
 
-    <nav id="nav-menu">
-      <a href="#">Home</a>
-      <a href="#">Old</a>
-      <a href="#">New</a>
-      <a href="#">Large</a>
-      <a href="#">Small</a>
-    </nav>
-  </header>
+<main>
+  <h1>Home</h1>
 
-  <main>
-    <h2>Beautiful Temples Around the World</h2>
-
-    <section class="gallery">
+  <section class="gallery">
       <figure><img src="images/salt_lake_temple.jpg" alt="Temple"><figcaption>Salt Lake Temple</figcaption></figure>
       <figure><img src="images/rome_italy_temple.jpg" alt="Temple"><figcaption>Rome Italy Temple</figcaption></figure>
       <figure><img src="images/paris_france_temple.jpg" alt="Temple"><figcaption>Paris France Temple</figcaption></figure>
@@ -48,12 +45,12 @@
       <figure><img src="images/san_diego_california_temple.jpg" alt="Temple"><figcaption>San Diego Temple</figcaption></figure>
       <figure><img src="images/london_england_temple.jpg" alt="Temple"><figcaption>London England Temple</figcaption></figure>
       <figure><img src="images/mexico_city_temple.jpg" alt="Temple"><figcaption>Mexico City Temple</figcaption></figure>
-    </section>
-  </main>
+  </section>
+</main>
 
-  <footer>
-    <p>© <span id="year"></span> Tamara McKnight | WDD 131</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-  </footer>
+<footer>
+  <p>© <span id="year"></span> Tamara McKnight | WDD 131</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
 </body>
 </html>
