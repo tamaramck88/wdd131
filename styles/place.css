@@ -1,0 +1,77 @@
+:root {
+color: #fff;
+padding: 1.5rem;
+text-align: center;
+}
+
+
+.hero img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+
+.content {
+display: grid;
+gap: 1rem;
+padding: 1rem;
+}
+
+
+.card {
+background-color: var(--card-bg);
+padding: 1rem;
+border-radius: 0.5rem;
+}
+
+
+.card h2 {
+margin-top: 0;
+border-bottom: 3px solid var(--secondary-color);
+padding-bottom: 0.25rem;
+}
+
+
+.weather-grid {
+display: grid;
+grid-template-columns: auto 1fr;
+gap: 1rem;
+align-items: center;
+}
+
+
+.weather-icon {
+width: 60px;
+height: auto;
+}
+
+
+.site-footer {
+background-color: var(--primary-color);
+color: #fff;
+text-align: center;
+padding: 1rem;
+font-size: 0.9rem;
+}
+
+
+/* Large View */
+@media (min-width: 32rem) {
+.content {
+grid-template-columns: 1fr 1fr;
+max-width: 1100px;
+margin: 0 auto;
+}
+
+
+/* Pseudo-element weather icon for large view */
+.weather h2::after {
+content: " ⛅";
+}
+
+
+.weather-icon {
+display: none;
+}
+}
