@@ -11,15 +11,15 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   background-color: #f5f5f5;  /* light gray background */
-  color: #333;                /* body text color */
+  color: #333;                /* body text color on light background */
 }
 
 /* ===============================
    HEADER
    =============================== */
 header {
-  background-color: #4b136e;  /* deep purple */
-  color: white;               /* text color changed to white for contrast */
+  background-color: #4b136e;  /* deep purple header */
+  color: white;               /* white text for contrast */
 }
 
 .header-content {
@@ -32,7 +32,7 @@ header {
 .site-title {
   font-size: 1.3rem;
   font-weight: 500;
-  color: white;               /* ensure title is white */
+  color: white;               /* enforce contrast */
 }
 
 /* ===============================
@@ -65,10 +65,10 @@ nav a {
 
 nav a:hover {
   background-color: #5e1b8a; /* slightly lighter purple hover */
-  color: white;              /* ensure hover text stays white */
+  color: white;              /* hover text stays readable */
 }
 
-/* Show nav when hamburger is active */
+/* Show nav when hamburger menu is active */
 nav.open {
   display: flex;
 }

@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
 
-  /* Hide hamburger on desktop */
+  /* Hide hamburger button on desktop */
   #menu-button {
     display: none;
   }
@@ -16,6 +16,7 @@
   /* Gallery: 3 columns on desktop */
   .gallery {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
   }
 
   figure {
