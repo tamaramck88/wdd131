@@ -1,11 +1,11 @@
 @media (min-width: 768px) {
 
-  /* Hide hamburger on larger screens */
+  /* Hide hamburger on desktop */
   #menu-button {
     display: none;
   }
 
-  /* Show nav as horizontal flex */
+  /* Nav links horizontal */
   nav {
     display: flex !important;
     justify-content: center;
@@ -13,7 +13,7 @@
     padding: 0.5rem 0;
   }
 
-  /* Gallery grid - 3 columns on desktop */
+  /* Gallery: 3 columns on desktop */
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
