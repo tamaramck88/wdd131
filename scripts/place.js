@@ -1,9 +1,11 @@
+// Footer Year & Last Modified
 const yearSpan = document.querySelector("#year");
 const lastModified = document.querySelector("#lastModified");
 
 yearSpan.textContent = new Date().getFullYear();
 lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
+// Weather & Wind Chill Calculation
 const temperature = Number(document.querySelector("#temp").textContent);
 const windSpeed = Number(document.querySelector("#wind").textContent);
 const chillSpan = document.querySelector("#chill");
