@@ -1,75 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WDD 131 Country Page – South Africa">
-  <meta name="author" content="Tamara McKnight">
-  <title>South Africa | WDD 131</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles/place.css">
-
-  <!-- JavaScript -->
-  <script src="scripts/place.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Africa | Place Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
 </head>
-
 <body>
-  <header>
-    <h1>South Africa</h1>
-  </header>
+    <!-- Hero Section -->
+    <header class="hero">
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/cape-town-large.webp">
+            <img src="images/cape-town-small.webp" alt="Cape Town, South Africa" class="hero-image">
+        </picture>
+        <h1 class="hero-title">South Africa</h1>
+    </header>
 
-  <main>
-    <!-- Hero Image -->
-    <section class="hero">
-      <section class="hero">
-  <picture>
-    <source srcset="images/cape-town.webp" media="(min-width: 64rem)">
-    <source srcset="images/cape-town.webp" media="(min-width: 32rem)">
-    <img src="images/cape-town.webp" alt="Aerial view of Cape Town with Table Mountain and the coastline">
-  </picture>
+    <!-- About Section -->
+    <section class="about">
+        <h2>About South Africa</h2>
+        <p>South Africa is located at the southern tip of Africa. Known for its cultural diversity, stunning landscapes, wildlife, and vibrant cities such as Cape Town, Johannesburg, and Durban, it offers a unique experience for locals and visitors alike.</p>
     </section>
 
-    <!-- Content Section -->
-    <section class="content">
-      <!-- About Section -->
-      <article class="card">
-        <h2>About</h2>
-        <p>
-          South Africa is a country located at the southernmost tip of Africa.
-          It is known for its cultural diversity, stunning coastlines, wildlife,
-          and vibrant cities. The country has eleven official languages and a
-          rich history that blends tradition with modern life.
-        </p>
-      </article>
-
-      <!-- Weather Section -->
-      <article class="card weather">
-        <h2>Weather</h2>
-
-        <div class="weather-info">
-          <!-- Mobile Weather Icon (SVG) -->
-          <img
-            src="images/weather.svg"
-            alt="Partly cloudy weather icon"
-            class="weather-icon"
-          >
-
-          <ul>
-            <li>Temperature: <span id="temp">18</span> °C</li>
-            <li>Wind Speed: <span id="wind">12</span> km/h</li>
-            <li>Wind Chill: <span id="chill"></span></li>
-          </ul>
-        </div>
-      </article>
+    <!-- Weather Section -->
+    <section class="weather">
+        <h2>Weather <span class="weather-icon">⛅</span></h2>
+        <ul>
+            <li>Temperature: <span id="temp">8</span> °C</li>
+            <li>Wind Speed: <span id="wind">15</span> km/h</li>
+            <li>Wind Chill: <span id="chill">N/A</span></li>
+        </ul>
     </section>
-  </main>
 
-  <footer>
-    <p>
-      © <span id="year"></span> | Tamara McKnight | South Africa
-    </p>
-    <p id="lastModified"></p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> | Tamara McKnight | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
