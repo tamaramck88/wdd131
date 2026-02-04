@@ -4,44 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Africa | Place Page</title>
+    <meta name="description" content="Learn about South Africa, including its cities, culture, and weather.">
+    <meta name="author" content="Tamara McKnight">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
-    <!-- Hero Section -->
+
+    <!-- Header / Hero Section -->
     <header class="hero">
         <picture>
-    <section>
-    <source srcset="images/cape-town.webp" media="(min-width: 64rem)">
-    <source srcset="images/cape-town.webp" media="(min-width: 32rem)">
-    <img src="images/cape-town.webp" alt="Aerial view of Cape Town with Table Mountain and the coastline">
-  </picture>
-    </section>
+            <source media="(min-width: 768px)" srcset="images/cape-town-large.webp">
+            <img src="images/cape-town-small.webp" alt="Aerial view of Cape Town with Table Mountain and the coastline" class="hero-image">
+        </picture>
         <h1 class="hero-title">South Africa</h1>
     </header>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>About South Africa</h2>
-        <p>
-            South Africa is located at the southern tip of Africa. Known for its cultural diversity, stunning landscapes, wildlife, and vibrant cities such as Cape Town, Johannesburg, and Durban, it offers a unique experience for locals and visitors alike.
-        </p>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section class="about">
+            <h2>About South Africa</h2>
+            <p>
+                South Africa is located at the southern tip of Africa. Known for its cultural diversity, stunning landscapes, wildlife, and vibrant cities such as Cape Town, Johannesburg, and Durban, it offers a unique experience for locals and visitors alike.
+            </p>
+        </section>
 
-    <!-- Weather Section -->
-    <section class="weather">
-        <h2>Weather <span class="weather-icon">⛅</span></h2>
-        <ul>
-            <li>Temperature: <span id="temp">8</span> °C</li>
-            <li>Wind Speed: <span id="wind">15</span> km/h</li>
-            <li>Wind Chill: <span id="chill">N/A</span></li>
-        </ul>
-    </section>
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather
+                <!-- Inline SVG icon -->
+                <svg class="weather-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#FFD100" d="M6 14h12v2H6zm6-12v4m0 10v4m-8-8h4m10 0h4m-12.293 4.293l2.828 2.828m-2.828-8.486l2.828-2.828"/>
+                </svg>
+            </h2>
+            <ul>
+                <li>Temperature: <span id="temp">8</span> °C</li>
+                <li>Wind Speed: <span id="wind">15</span> km/h</li>
+                <li>Wind Chill: <span id="chill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
         <p>&copy; <span id="year"></span> | Tamara McKnight | South Africa</p>
         <p id="lastModified"></p>
     </footer>
+
 </body>
 </html>

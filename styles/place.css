@@ -1,4 +1,6 @@
-/* Global Variables for South African Flag Colors */
+/* ===========================
+   Global Variables – SA Flag Colors
+=========================== */
 :root {
     --green: #007749;
     --gold: #FFD100;
@@ -9,7 +11,9 @@
     --font-stack: Arial, Helvetica, sans-serif;
 }
 
-/* Reset */
+/* ===========================
+   Reset & Body
+=========================== */
 * {
     margin: 0;
     padding: 0;
@@ -19,11 +23,13 @@
 body {
     font-family: var(--font-stack);
     line-height: 1.6;
-    color: var(--black);
     background-color: var(--white);
+    color: var(--black);
 }
 
-/* Hero Section */
+/* ===========================
+   Hero Section
+=========================== */
 .hero {
     position: relative;
     text-align: center;
@@ -43,9 +49,18 @@ body {
     left: 50%;
     transform: translateX(-50%);
     font-size: 2.5rem;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 8px;
+}
+
+/* ===========================
+   Main Sections
+=========================== */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 /* About Section */
@@ -77,10 +92,20 @@ body {
 .weather h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    position: relative;
+}
+
+/* ::after pseudo-element for wide screens */
+.weather h2::after {
+    content: " ⛅";
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    display: inline-block;
 }
 
 .weather ul {
     list-style: none;
+    padding: 0;
 }
 
 .weather li {
@@ -96,7 +121,9 @@ footer {
     color: var(--white);
 }
 
-/* Responsive Layout */
+/* ===========================
+   Responsive Layout
+=========================== */
 @media (min-width: 768px) {
     .hero-title {
         font-size: 3.5rem;
