@@ -1,0 +1,144 @@
+/* =========================
+   Site Plan CSS
+   Author: Your Name
+   Date: 2026
+========================= */
+
+/* --- Root Variables for Color Scheme --- */
+:root {
+    --primary-color: #0072C6; /* headings, links */
+    --secondary-color: #FFD700; /* accents, buttons */
+    --background-color: #F5F5F5; /* page background */
+    --text-color: #333333; /* body text */
+    --accent-bg: #fff9e6; /* subtle highlight background */
+}
+
+/* --- Global Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* --- Paragraphs --- */
+p {
+    margin-bottom: 15px;
+}
+
+.accent {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* --- Lists --- */
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* --- Wireframe Styles --- */
+.wireframe {
+    border: 2px dashed var(--primary-color);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    background-color: var(--accent-bg);
+}
+
+.wireframe div {
+    border: 1px solid var(--secondary-color);
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* --- Code Blocks --- */
+code {
+    background-color: #eee;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+/* --- Links --- */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 2px solid var(--primary-color);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .wireframe div {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+}
