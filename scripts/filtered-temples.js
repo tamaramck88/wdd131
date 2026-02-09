@@ -77,7 +77,7 @@ const temples = [
     dedicated: "1893, April, 6",
     area: 253000,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-temple/400x250/salt-lake-temple-3540.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-utah/400x250/salt-lake-temple-lds-27300-wallpaper.jpg"
   }
 ];
 
