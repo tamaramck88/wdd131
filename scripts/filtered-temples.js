@@ -61,7 +61,7 @@ const temples = [
     dedicated: "1995, August, 25",
     area: 10000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/cape-town-south-africa-temple/cape-town-south-africa-temple-2266.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cape-town-south-africa/400x250/cape-town-south-africa-temple-2266.jpg"
   },
   {
     templeName: "Rome Italy",
@@ -69,7 +69,7 @@ const temples = [
     dedicated: "2019, March, 10",
     area: 40000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-3126.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-3126.jpg"
   },
   {
     templeName: "Salt Lake Temple",
@@ -77,7 +77,7 @@ const temples = [
     dedicated: "1893, April, 6",
     area: 253000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-3540.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-temple/400x250/salt-lake-temple-3540.jpg"
   }
 ];
 
