@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer Site Plan</title>
+    <link rel="stylesheet" href="siteplan.css">
+    <style>
+        /* Color Scheme */
+        :root {
+            --primary-color: #0072C6; /* headings */
+            --secondary-color: #FFD700; /* accents/buttons */
+            --background-color: #F5F5F5; /* page background */
+            --text-color: #333333; /* body text */
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        .accent {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .wireframe {
+            border: 2px dashed var(--primary-color);
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .wireframe div {
+            border: 1px solid var(--secondary-color);
+            padding: 20px;
+            margin: 5px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Explorer - Site Plan</h1>
+    </header>
+
+    <!-- Site Name -->
+    <section>
+        <h2>Site Name</h2>
+        <p><span class="accent">Travel Explorer</span></p>
+        <p>This name represents a website dedicated to helping users discover, plan, and share travel destinations worldwide. It emphasizes exploration and adventure.</p>
+        <p>Optional domain availability: travel-explorer.com</p>
+    </section>
+
+    <!-- Site Purpose -->
+    <section>
+        <h2>Site Purpose</h2>
+        <p>The website provides a comprehensive hub for travel enthusiasts by offering destination guides, travel tips, interactive itineraries, and user-generated reviews. Users can plan trips, discover new locations, and save information locally using interactive tools.</p>
+    </section>
+
+    <!-- Scenarios -->
+    <section>
+        <h2>Scenarios</h2>
+        <ul>
+            <li>How can I create a personalized itinerary for a 7-day European vacation?</li>
+            <li>Which destinations are family-friendly and budget-conscious?</li>
+            <li>How can I save my travel plans locally to reference later?</li>
+        </ul>
+    </section>
+
+    <!-- Color Scheme -->
+    <section>
+        <h2>Color Scheme</h2>
+        <ul>
+            <li><strong>Primary Color:</strong> <span style="color: #0072C6;">#0072C6</span> – used for headings, links, and navigation</li>
+            <li><strong>Secondary Color:</strong> <span style="color: #FFD700;">#FFD700</span> – accents, buttons, highlights</li>
+            <li><strong>Background Color:</strong> <span style="color: #F5F5F5;">#F5F5F5</span> – page background</li>
+            <li><strong>Text Color:</strong> <span style="color: #333333;">#333333</span> – main content</li>
+        </ul>
+    </section>
+
+    <!-- Typography -->
+    <section>
+        <h2>Typography</h2>
+        <ul>
+            <li><strong>Headings:</strong> Georgia, serif</li>
+            <li><strong>Body:</strong> Arial, sans-serif</li>
+            <li><strong>Special Sections:</strong> 'Courier New', monospace (for code blocks or template literals examples)</li>
+        </ul>
+    </section>
+
+    <!-- Wireframes -->
+    <section>
+        <h2>Wireframes</h2>
+        <h3>Desktop View</h3>
+        <div class="wireframe">
+            <div>Header: Logo / Navigation</div>
+            <div>Main Banner: Hero Image / Intro</div>
+            <div>Featured Destinations</div>
+            <div>Interactive Itinerary Section</div>
+            <div>Travel Tips / Articles</div>
+            <div>Footer: Contact / References / Social Links</div>
+        </div>
+
+        <h3>Mobile View</h3>
+        <div class="wireframe">
+            <div>Header: Logo / Hamburger Menu</div>
+            <div>Main Banner: Hero Image</div>
+            <div>Featured Destinations</div>
+            <div>Interactive Itinerary Section</div>
+            <div>Travel Tips / Articles</div>
+            <div>Footer: Contact / References / Social Links</div>
+        </div>
+    </section>
+
+    <!-- CSS -->
+    <section>
+        <h2>CSS</h2>
+        <p>The main CSS file (<code>style.css</code>) will include:</p>
+        <ul>
+            <li>Responsive design rules using media queries</li>
+            <li>PARC principles: Proximity, Alignment, Repetition, Contrast</li>
+            <li>Color scheme and typography as outlined above</li>
+            <li>Styling for headers, buttons, forms, and wireframe sections</li>
+        </ul>
+    </section>
+
+    <!-- JavaScript -->
+    <section>
+        <h2>JavaScript</h2>
+        <ul>
+            <li>Functions for interactive itinerary planner and saving data to <code>localStorage</code></li>
+            <li>DOM interactions: selecting, modifying, and reacting to events</li>
+            <li>Conditional branching to display travel suggestions based on user input</li>
+            <li>Using arrays and objects to manage destinations and itineraries</li>
+            <li>Output using template literals</li>
+        </ul>
+    </section>
+
+    <!-- Testing -->
+    <section>
+        <h2>Testing</h2>
+        <ul>
+            <li>Validate HTML with <a href="https://validator.w3.org/">W3C HTML Validator</a></li>
+            <li>Validate CSS with <a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a></li>
+            <li>Check accessibility: color contrast, ARIA labels, keyboard navigation</li>
+            <li>SEO: meta description, alt text for images, proper headings</li>
+            <li>Performance: Google Lighthouse / PageSpeed Insights</li>
+            <li>Functionality testing: forms, JavaScript dynamic elements, and responsive design</li>
+        </ul>
+    </section>
+
+    <!-- References Link -->
+    <footer>
+        <p>&copy; 2026 Travel Explorer. All rights reserved. | <a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>
