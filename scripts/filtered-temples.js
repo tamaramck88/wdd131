@@ -63,7 +63,7 @@ const temples = [
     location: "Cape Town, South Africa",
     dedicated: "1995-08-25",
     area: 10000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cape-town-south-africa/400x250/cape-town-temple-lds-1014451-wallpaper.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/cape-town-south-africa/400x250/cape-town-temple-lds-1014451-wallpaper.jpg"
   },
   {
     templeName: "Rome Italy",
