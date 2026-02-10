@@ -1,3 +1,10 @@
+const templesElement = document.querySelector("#temples");
+const yearSpan = document.querySelector("#year");
+const lastModified = document.querySelector("#lastModified");
+
+yearSpan.textContent = new Date().getFullYear();
+lastModified.textContent = document.lastModified;
+
 const temples = [
   {
     templeName: "Aba Nigeria",
