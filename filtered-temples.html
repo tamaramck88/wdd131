@@ -3,26 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Temple Album</title>
-
-  <meta name="description" content="A filtered temple album showcasing temples by age and size using JavaScript filtering.">
-  <meta name="author" content="Tamara McKnight">
+  <title>Filtered Temples</title>
 
   <link rel="stylesheet" href="styles/filtered-temples.css">
   <script src="scripts/filtered-temples.js" defer></script>
 </head>
 
 <body>
-
   <header>
     <h1>Temple Album</h1>
+
     <nav>
-      <a href="#" data-filter="all">Home</a>
-      <a href="#" data-filter="old">Old</a>
-      <a href="#" data-filter="new">New</a>
-      <a href="#" data-filter="large">Large</a>
-      <a href="#" data-filter="small">Small</a>
+      <button id="home">Home</button>
+      <button id="old">Old</button>
+      <button id="new">New</button>
+      <button id="large">Large</button>
+      <button id="small">Small</button>
     </nav>
   </header>
 
@@ -31,8 +27,10 @@
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Temple Album | Last Modified: <span id="lastModified"></span></p>
+    <p>
+      © <span id="year"></span> • Temple Album |
+      Last Modified: <span id="lastModified"></span>
+    </p>
   </footer>
-
 </body>
 </html>
