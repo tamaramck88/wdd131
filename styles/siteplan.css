@@ -1,0 +1,70 @@
+/* Root Colors */
+:root {
+    --gold: #C6A75E;
+    --charcoal: #222222;
+    --white: #F8F8F8;
+    --light-gray: #EAEAEA;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    color: var(--charcoal);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--light-gray);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    margin-top: 2rem;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--charcoal);
+}
+
+/* Sections */
+section {
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+}
+
+/* Lists */
+ul {
+    padding-left: 1.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--charcoal);
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    section {
+        padding: 2rem;
+    }
+}
