@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Tamara McKnight">
-    <meta name="description" content="Product Review Form">
+    <meta name="description" content="Submit a detailed product review including rating, installation date, useful features, and written feedback.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
 
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
 
 <header>
@@ -31,30 +32,20 @@
         <fieldset class="form-group">
             <legend>Overall Rating *</legend>
 
-            <label>
-                <input type="radio" id="rate1" name="rating" value="1" required>
-                1 ☆
-            </label>
+            <input type="radio" id="rate1" name="rating" value="1" required>
+            <label for="rate1">1 ☆</label>
 
-            <label>
-                <input type="radio" id="rate2" name="rating" value="2">
-                2 ☆☆
-            </label>
+            <input type="radio" id="rate2" name="rating" value="2" required>
+            <label for="rate2">2 ☆☆</label>
 
-            <label>
-                <input type="radio" id="rate3" name="rating" value="3">
-                3 ☆☆☆
-            </label>
+            <input type="radio" id="rate3" name="rating" value="3" required>
+            <label for="rate3">3 ☆☆☆</label>
 
-            <label>
-                <input type="radio" id="rate4" name="rating" value="4">
-                4 ☆☆☆☆
-            </label>
+            <input type="radio" id="rate4" name="rating" value="4" required>
+            <label for="rate4">4 ☆☆☆☆</label>
 
-            <label>
-                <input type="radio" id="rate5" name="rating" value="5">
-                5 ☆☆☆☆☆
-            </label>
+            <input type="radio" id="rate5" name="rating" value="5" required>
+            <label for="rate5">5 ☆☆☆☆☆</label>
         </fieldset>
 
         <!-- Installation Date -->
@@ -67,25 +58,17 @@
         <fieldset class="form-group">
             <legend>Useful Features</legend>
 
-            <label>
-                <input type="checkbox" id="durability" name="features" value="Durability">
-                Durability
-            </label>
+            <input type="checkbox" id="durability" name="features" value="Durability">
+            <label for="durability">Durability</label>
 
-            <label>
-                <input type="checkbox" id="design" name="features" value="Design">
-                Design
-            </label>
+            <input type="checkbox" id="design" name="features" value="Design">
+            <label for="design">Design</label>
 
-            <label>
-                <input type="checkbox" id="performance" name="features" value="Performance">
-                Performance
-            </label>
+            <input type="checkbox" id="performance" name="features" value="Performance">
+            <label for="performance">Performance</label>
 
-            <label>
-                <input type="checkbox" id="value" name="features" value="Value">
-                Value for Money
-            </label>
+            <input type="checkbox" id="value" name="features" value="Value">
+            <label for="value">Value for Money</label>
         </fieldset>
 
         <!-- Written Review -->
