@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Tamara McKnight">
+<meta name="description" content="Contact Golden Lens Photography for bookings and inquiries.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Lens Photography | Contact</title>
+
+<link rel="stylesheet" href="styles/project.css">
+<script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Golden Lens Photography</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Book a Session</h2>
+
+    <form id="contactForm">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" required>
+
+        <label for="service">Service *</label>
+        <select id="service" required>
+            <option value="">Select Service</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Portrait">Portrait</option>
+            <option value="Event">Event</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="confirmation"></p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Tamara McKnight</p>
+    <a href="references.html">References</a>
+</footer>
+
+</body>
+</html>

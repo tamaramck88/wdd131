@@ -1,0 +1,76 @@
+:root {
+    --gold: #c6a75e;
+    --dark: #222222;
+    --light: #f8f8f8;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: var(--dark);
+}
+
+header {
+    background: var(--dark);
+    color: white;
+    padding: 1rem;
+}
+
+nav a {
+    color: var(--gold);
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: var(--gold);
+    color: white;
+}
+
+.service-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--dark);
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
