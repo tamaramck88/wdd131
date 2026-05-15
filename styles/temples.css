@@ -9,30 +9,31 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
-  background-color: #f5f5f5;  /* light gray background */
-  color: #333;                /* body text color on light background */
+  line-height: 1.6;
+  background-color: #f4f4f6;
+  color: #333;
 }
 
 /* ===============================
    HEADER
    =============================== */
 header {
-  background-color: #4b136e;  /* deep purple header */
-  color: white;               /* white text for contrast */
+  background-color: #4b136e;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 1.25rem;
 }
 
 .site-title {
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: white;               /* enforce contrast */
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 /* ===============================
@@ -41,79 +42,101 @@ header {
 #menu-button {
   background: none;
   border: none;
-  color: white;               /* white for contrast */
-  font-size: 1.6rem;
+  color: white;
+  font-size: 1.8rem;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#menu-button:hover {
+  transform: scale(1.1);
 }
 
 /* ===============================
    NAVIGATION
    =============================== */
 nav {
-  display: none;              /* hidden by default on mobile */
+  display: none;
   flex-direction: column;
   text-align: center;
-  background-color: #4b136e;  /* same purple as header */
+  background-color: #4b136e;
+  padding-bottom: 0.75rem;
 }
 
-nav a {
-  color: white;               /* white text for contrast */
-  text-decoration: none;
-  padding: 0.5rem;
-  font-size: 0.95rem;
-}
-
-nav a:hover {
-  background-color: #5e1b8a; /* slightly lighter purple hover */
-  color: white;              /* hover text stays readable */
-}
-
-/* Show nav when hamburger menu is active */
 nav.open {
   display: flex;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease,
+              color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #6a1b9a;
+  color: #fff;
+}
+
 /* ===============================
-   MAIN & GALLERY
+   MAIN
    =============================== */
 main {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 main h1 {
   text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #4b136e;
+  letter-spacing: 0.5px;
 }
 
-/* Gallery Grid - Mobile First */
+/* ===============================
+   GALLERY GRID
+   =============================== */
 .gallery {
   display: grid;
-  grid-template-columns: 1fr;  /* single column on mobile */
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
+/* ===============================
+   FIGURES / CARDS
+   =============================== */
 figure {
   background-color: white;
-  border: 1px solid #ddd;
-  padding: 0.5rem;
-  border-radius: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 
 figure img {
   width: 100%;
+  height: auto;
   display: block;
-  border-radius: 3px;
 }
 
 figcaption {
   text-align: center;
-  margin-top: 0.5rem;
+  padding: 1rem;
   font-weight: 500;
-  color: #4b136e;  /* purple accent for captions */
-  font-size: 0.85rem;
+  color: #4b136e;
+  font-size: 0.95rem;
+  background-color: #fafafa;
 }
 
 /* ===============================
@@ -123,7 +146,11 @@ footer {
   background-color: #4b136e;
   color: white;
   text-align: center;
-  padding: 0.75rem;
-  font-size: 0.75rem;
-  margin-top: 2rem;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+}
+
+footer p:first-child {
+  margin-bottom: 0.35rem;
 }
