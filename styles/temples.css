@@ -24,61 +24,55 @@ header {
 }
 
 .header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.25rem;
+
+  padding: 1rem;
 }
 
 .site-title {
   font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
 }
 
 /* ===============================
    HAMBURGER BUTTON
    =============================== */
 #menu-button {
+  display: none;
   background: none;
   border: none;
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-#menu-button:hover {
-  transform: scale(1.1);
 }
 
 /* ===============================
    NAVIGATION
    =============================== */
 nav {
-  display: none;
-  flex-direction: column;
-  text-align: center;
-  background-color: #4b136e;
-  padding-bottom: 0.75rem;
-}
-
-nav.open {
   display: flex;
+  gap: 1.5rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  padding: 0.75rem;
-  font-size: 1rem;
-  transition: background-color 0.3s ease,
-              color 0.3s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  padding: 0.35rem 0.6rem;
+
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
   background-color: #6a1b9a;
-  color: #fff;
+  border-radius: 4px;
 }
 
 /* ===============================
@@ -95,15 +89,14 @@ main h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #4b136e;
-  letter-spacing: 0.5px;
 }
 
 /* ===============================
-   GALLERY GRID
+   GALLERY
    =============================== */
 .gallery {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -114,13 +107,17 @@ figure {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s ease,
-              box-shadow 0.3s ease;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 figure:hover {
   transform: translateY(-5px);
+
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 
@@ -135,7 +132,6 @@ figcaption {
   padding: 1rem;
   font-weight: 500;
   color: #4b136e;
-  font-size: 0.95rem;
   background-color: #fafafa;
 }
 
@@ -153,4 +149,39 @@ footer {
 
 footer p:first-child {
   margin-bottom: 0.35rem;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+   =============================== */
+@media screen and (max-width: 767px) {
+
+  .header-content {
+    flex-wrap: wrap;
+  }
+
+  #menu-button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    padding: 0.75rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
 }
