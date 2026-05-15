@@ -1,29 +1,18 @@
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
-  /* Hide hamburger button on desktop */
   #menu-button {
     display: none;
   }
 
-  /* Nav links horizontal */
   nav {
-    display: flex !important;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 1.5rem;
-    padding: 0.5rem 0;
   }
 
-  /* Gallery: 3 columns on desktop */
   .gallery {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
   }
 
-  figure {
-    padding: 1rem;
-  }
-
-  figcaption {
-    font-size: 0.9rem;
-  }
 }

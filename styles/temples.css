@@ -96,7 +96,7 @@ main h1 {
    =============================== */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
@@ -178,10 +178,6 @@ footer p:first-child {
 
   nav a {
     padding: 0.75rem;
-  }
-
-  .gallery {
-    grid-template-columns: 1fr;
   }
 
 }
