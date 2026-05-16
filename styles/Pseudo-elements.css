@@ -1,0 +1,32 @@
+:root {
+    --border-style: 1px solid #777;
+}
+
+a:link,
+a:visited {
+    color: navy;
+}
+
+a:hover {
+    color: purple;
+}
+
+.datatable {
+    border-left: var(--border-style);
+    border-top: var(--border-style);
+}
+
+.col {
+    border-right: var(--border-style);
+    border-bottom: var(--border-style);
+}
+
+.row:last-child {
+    background-color: #ccc;
+}
+
+ol li::marker {
+    content: "✔ ";
+    color: navy;
+    font-size: 2rem;
+}
