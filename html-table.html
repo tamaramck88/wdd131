@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Build</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        table {
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        thead {
+            background-color: #333;
+            color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e9e9e9;
+        }
+
+        tbody tr:hover {
+            background-color: #d6eaf8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>Table 1: Account Feature Comparison</caption>
+
+        <thead>
+            <tr>
+                <th>Features</th>
+                <th>Basic</th>
+                <th>Premium</th>
+                <th>Enterprise</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Storage</td>
+                <td>✔️ 5GB</td>
+                <td>✔️ 50GB</td>
+                <td>✔️ Unlimited</td>
+            </tr>
+
+            <tr>
+                <td>Support</td>
+                <td>❌</td>
+                <td>✔️</td>
+                <td>✔️ 24/7</td>
+            </tr>
+
+            <tr>
+                <td>Custom Domain</td>
+                <td>❌</td>
+                <td>✔️</td>
+                <td>✔️</td>
+            </tr>
+
+            <tr>
+                <td>Analytics</td>
+                <td>❌</td>
+                <td>✔️ Basic</td>
+                <td>✔️ Advanced</td>
+            </tr>
+
+            <tr>
+                <td>Users</td>
+                <td>1 User</td>
+                <td>5 Users</td>
+                <td>Unlimited Users</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
