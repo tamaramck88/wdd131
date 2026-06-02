@@ -1,3 +1,5 @@
+console.log("JS LOADED");
+
 function setupFilters() {
   const home = document.querySelector("#home");
   const old = document.querySelector("#old");
