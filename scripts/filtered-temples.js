@@ -87,7 +87,6 @@ filteredTemples.forEach(temple => {
 const card = document.createElement("div");
 card.classList.add("temple-card");
 
-```
 const img = document.createElement("img");
 img.src = temple.imageUrl;
 img.alt = temple.templeName;
@@ -149,4 +148,3 @@ lastModified.textContent = document.lastModified;
 
 /* INITIAL LOAD */
 displayTemples(temples);
-
