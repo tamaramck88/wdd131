@@ -1,44 +1,72 @@
-console.log("JS LOADED");
+const templesElement = document.querySelector("#temples");
 
-function setupFilters() {
-  const home = document.querySelector("#home");
-  const old = document.querySelector("#old");
-  const newT = document.querySelector("#new");
-  const large = document.querySelector("#large");
-  const small = document.querySelector("#small");
+document.querySelector("#year").textContent =
+new Date().getFullYear();
 
-  if (home) {
-    home.addEventListener("click", (e) => {
-      e.preventDefault();
-      displayTemples(temples);
-    });
-  }
+document.querySelector("#lastModified").textContent =
+document.lastModified;
 
-  if (old) {
-    old.addEventListener("click", (e) => {
-      e.preventDefault();
-      displayTemples(temples.filter(t => new Date(t.dedicated).getFullYear() < 1900));
-    });
-  }
+/* KEEP YOUR CURRENT temples ARRAY HERE */
 
-  if (newT) {
-    newT.addEventListener("click", (e) => {
-      e.preventDefault();
-      displayTemples(temples.filter(t => new Date(t.dedicated).getFullYear() > 2000));
-    });
-  }
+function displayTemples(templesList) {
+templesElement.innerHTML = "";
 
-  if (large) {
-    large.addEventListener("click", (e) => {
-      e.preventDefault();
-      displayTemples(temples.filter(t => t.area > 90000));
-    });
-  }
+```
+templesList.forEach((temple) => {
+    const card = document.createElement("article");
+    card.classList.add("temple-card");
 
-  if (small) {
-    small.addEventListener("click", (e) => {
-      e.preventDefault();
-      displayTemples(temples.filter(t => t.area < 10000));
-    });
-  }
+    card.innerHTML = `
+        <h2>${temple.templeName}</h2>
+        <p><strong>Location:</strong> ${temple.location}</p>
+        <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+        <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
+        <img src="${temple.imageUrl}"
+             alt="${temple.templeName}"
+             loading="lazy">
+    `;
+
+    templesElement.appendChild(card);
+});
+```
+
 }
+
+document.querySelector("#home").addEventListener("click", (e) => {
+e.preventDefault();
+displayTemples(temples);
+});
+
+document.querySelector("#old").addEventListener("click", (e) => {
+e.preventDefault();
+displayTemples(
+temples.filter(
+temple => new Date(temple.dedicated).getFullYear() < 1900
+)
+);
+});
+
+document.querySelector("#new").addEventListener("click", (e) => {
+e.preventDefault();
+displayTemples(
+temples.filter(
+temple => new Date(temple.dedicated).getFullYear() > 2000
+)
+);
+});
+
+document.querySelector("#large").addEventListener("click", (e) => {
+e.preventDefault();
+displayTemples(
+temples.filter(temple => temple.area > 90000)
+);
+});
+
+document.querySelector("#small").addEventListener("click", (e) => {
+e.preventDefault();
+displayTemples(
+temples.filter(temple => temple.area < 10000)
+);
+});
+
+displayTemples(temples);
