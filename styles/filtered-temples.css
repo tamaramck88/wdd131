@@ -21,15 +21,15 @@ nav {
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-gap: 0.5rem;
+gap: .5rem;
 margin-top: 1rem;
 }
 
 nav a {
 text-decoration: none;
-background-color: white;
+background: white;
 color: #4b136e;
-padding: 0.5rem 1rem;
+padding: .5rem 1rem;
 border-radius: 4px;
 font-weight: bold;
 }
@@ -51,11 +51,11 @@ gap: 1rem;
 }
 
 .temple-card {
-background-color: white;
+background: white;
 border-radius: 8px;
 overflow: hidden;
 text-align: center;
-box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+box-shadow: 0 2px 6px rgba(0,0,0,.15);
 }
 
 .temple-card img {
@@ -64,11 +64,11 @@ display: block;
 }
 
 .temple-card h2 {
-padding: 0.5rem;
+padding: .5rem;
 }
 
 .temple-card p {
-padding: 0.25rem;
+padding: .25rem;
 }
 
 footer {
