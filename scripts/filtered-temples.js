@@ -85,7 +85,7 @@ templeList.forEach((temple) => {
 const card = document.createElement("article");
 card.classList.add("temple-card");
 
-```
+``
 card.innerHTML = `
   <h2>${temple.templeName}</h2>
   <p><strong>Location:</strong> ${temple.location}</p>
