@@ -111,13 +111,19 @@ function displayTemples(templesList) {
     card.classList.add("temple-card");
 
     card.innerHTML = `
-      <h3>${temple.templeName}</h3>
-      <p><strong>Location:</strong> ${temple.location}</p>
-      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-      <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-      <img src="${temple.imageUrl}"
-           alt="${temple.templeName}"
-           loading="lazy">
+    <h3>${temple.templeName}</h3>
+
+    <div class="temple-info">
+        <p><strong>Location:</strong> ${temple.location}</p>
+        <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+        <p><strong>Size:</strong> ${temple.area.toLocaleString()} sq ft</p>
+    </div>
+
+    <img
+        src="${temple.imageUrl}"
+        alt="${temple.templeName}"
+        loading="lazy"
+    >
     `;
 
     container.appendChild(card);
