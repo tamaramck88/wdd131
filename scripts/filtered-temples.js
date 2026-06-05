@@ -5,7 +5,7 @@ const temples = [
     dedicated: "1893, April, 6",
     area: 253000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-37763.jpg"
+      "images/salt-lake.jpg"
   },
   {
     templeName: "Laie Hawaii Temple",
@@ -13,7 +13,7 @@ const temples = [
     dedicated: "1919, November, 27",
     area: 42100,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-7617.jpg"
+      "images/hawaii.jpg"
   },
   {
     templeName: "Cardston Alberta Temple",
@@ -21,7 +21,7 @@ const temples = [
     dedicated: "1923, August, 26",
     area: 88262,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/cardston-alberta-temple/cardston-alberta-temple-40612.jpg"
+      "images/cardston.jpg"
   },
   {
     templeName: "Mesa Arizona Temple",
