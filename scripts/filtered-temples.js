@@ -96,7 +96,7 @@ const temples = [
     dedicated: "2023, October, 8",
     area: 7225,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/feather-river-california-temple/feather-river-california-temple-55946.jpg"
+      "https://churchofjesuschristtemples.org/feather-river-california-temple/"
   }
 ];
 
