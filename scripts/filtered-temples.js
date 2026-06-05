@@ -29,7 +29,7 @@ const temples = [
     dedicated: "1927, October, 23",
     area: 113916,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/mesa-arizona-temple/mesa-arizona-temple-13083.jpg"
+      "images/mesa.jpg"
   },
   {
     templeName: "Idaho Falls Idaho Temple",
@@ -37,7 +37,7 @@ const temples = [
     dedicated: "1945, September, 23",
     area: 85624,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/idaho-falls-idaho-temple/idaho-falls-idaho-temple-39431.jpg"
+      "images/idaho.jpg"
   },
   {
     templeName: "Nauvoo Illinois Temple",
@@ -45,7 +45,7 @@ const temples = [
     dedicated: "2002, June, 27",
     area: 54000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-illinois-temple/nauvoo-illinois-temple-53443.jpg"
+      "images/nauvoo.jpg"
   },
   {
     templeName: "Mount Timpanogos Utah Temple",
@@ -53,7 +53,7 @@ const temples = [
     dedicated: "1996, October, 13",
     area: 107240,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/mount-timpanogos-utah-temple/mount-timpanogos-utah-temple-38531.jpg"
+      "images/mount-timpanogos.jpg"
   },
   {
     templeName: "Redlands California Temple",
@@ -61,7 +61,7 @@ const temples = [
     dedicated: "2003, September, 14",
     area: 17700,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/redlands-california-temple/redlands-california-temple-38585.jpg"
+      "images/redlands.jpg"
   },
   {
     templeName: "Gilbert Arizona Temple",
@@ -69,7 +69,7 @@ const temples = [
     dedicated: "2014, March, 2",
     area: 85000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/gilbert-arizona-temple/gilbert-arizona-temple-38587.jpg"
+      "images/gilbert.jpg"
   },
 
   // Additional Temples
@@ -80,7 +80,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/payson-utah-temple/payson-utah-temple-38597.jpg"
+      "images/payson.jpg"
   },
   {
     templeName: "Paris France Temple",
@@ -88,7 +88,7 @@ const temples = [
     dedicated: "2017, May, 21",
     area: 44000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-38490.jpg"
+      "images/paris.jpg"
   },
   {
     templeName: "Feather River California Temple",
@@ -96,7 +96,7 @@ const temples = [
     dedicated: "2023, October, 8",
     area: 7225,
     imageUrl:
-      "https://churchofjesuschristtemples.org/feather-river-california-temple/"
+      "images/feather-river.jpg"
   }
 ];
 
