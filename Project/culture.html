@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="author" content="Tamara McKnight">
-<meta name="description" content="View wedding, portrait, and event photography by Golden Lens Photography.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golden Lens Photography | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="styles/project.css">
-<script src="scripts/portfolio.js" defer></script>
+    <title>Culture - South Africa Travel Guide</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <h1>Golden Lens Photography</h1>
+    <h1>South Africa Culture & Food</h1>
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="wildlife.html">Wildlife</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 </header>
 
-<section>
-    <h2>Portfolio</h2>
+<main>
+    <h2>Culture of South Africa</h2>
 
-    <div class="filters">
-        <button data-category="all">All</button>
-        <button data-category="wedding">Weddings</button>
-        <button data-category="portrait">Portraits</button>
-        <button data-category="event">Events</button>
-    </div>
+    <p>
+        South Africa has 11 official languages and a rich mix of traditions,
+        music, dance, and food cultures.
+    </p>
 
-    <div id="gallery" class="gallery"></div>
-</section>
+    <section class="cards">
+        <article class="card">
+            <h3>Languages</h3>
+            <p>Zulu, Xhosa, Afrikaans, English and more.</p>
+        </article>
+
+        <article class="card">
+            <h3>Food</h3>
+            <p>Braai, Bobotie, Biltong, Vetkoek.</p>
+        </article>
+
+        <article class="card">
+            <h3>Traditions</h3>
+            <p>Music, dance, storytelling, and cultural ceremonies.</p>
+        </article>
+    </section>
+</main>
 
 <footer>
-    <p>&copy; 2026 Tamara McKnight</p>
+    <p>&copy; <span id="year"></span> South Africa Travel Guide</p>
     <a href="references.html">References</a>
 </footer>
 
