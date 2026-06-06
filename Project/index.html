@@ -1,55 +1,149 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="author" content="Tamara McKnight">
-<meta name="description" content="Golden Lens Photography offers professional wedding, portrait, and event photography services.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golden Lens Photography | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore South Africa's destinations, culture, wildlife, and tourism attractions.">
+    <meta name="author" content="Tamara McKnight">
 
-<link rel="stylesheet" href="styles/styles.css">
-<script src="scripts/main.js" defer></script>
+    <title>South Africa Travel & Culture Guide</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <h1>Golden Lens Photography</h1>
-    <button id="menuBtn" aria-label="Toggle Navigation">☰</button>
-    <nav id="navMenu">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+    <h1>South Africa Travel & Culture Guide</h1>
+
+    <button id="menu-button">☰ Menu</button>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="culture.html">Culture & Food</a></li>
+            <li><a href="wildlife.html">Wildlife</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 </header>
 
-<section class="hero">
-    <h2>Capturing Life's Golden Moments</h2>
-    <p>Professional wedding, portrait, and event photography.</p>
-</section>
+<main>
 
-<section class="services">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-        <article>
-            <h3>Weddings</h3>
-            <p>Elegant and timeless wedding photography.</p>
+    <section class="hero">
+        <img src="images/banner.jpg"
+             alt="Beautiful South African landscape"
+             loading="lazy">
+
+        <div class="hero-text">
+            <h2>Discover the Beauty of South Africa</h2>
+
+            <p>
+                From stunning coastlines and vibrant cities to
+                incredible wildlife and rich cultural traditions,
+                South Africa offers unforgettable experiences.
+            </p>
+        </div>
+    </section>
+
+    <section class="welcome">
+        <h2>Welcome</h2>
+
+        <p>
+            South Africa is known as the Rainbow Nation because
+            of its diverse cultures, languages, and people.
+            Explore famous attractions, discover local traditions,
+            and learn about one of Africa's most fascinating countries.
+        </p>
+    </section>
+
+    <section class="cards">
+
+        <article class="card">
+            <img src="images/cape-town.jpg"
+                 alt="Cape Town"
+                 loading="lazy">
+
+            <h3>Top Destinations</h3>
+
+            <p>
+                Visit Cape Town, Johannesburg, Durban,
+                Pretoria, and many other exciting places.
+            </p>
+
+            <a href="destinations.html" class="button">
+                Explore Destinations
+            </a>
         </article>
-        <article>
-            <h3>Portraits</h3>
-            <p>Professional portraits for families and individuals.</p>
+
+        <article class="card">
+            <img src="images/braai.jpg"
+                 alt="South African Braai"
+                 loading="lazy">
+
+            <h3>Culture & Food</h3>
+
+            <p>
+                Learn about South Africa's traditions,
+                languages, music, and delicious cuisine.
+            </p>
+
+            <a href="culture.html" class="button">
+                Discover Culture
+            </a>
         </article>
-        <article>
-            <h3>Events</h3>
-            <p>Capturing corporate and private events.</p>
+
+        <article class="card">
+            <img src="images/lion.jpg"
+                 alt="African Lion"
+                 loading="lazy">
+
+            <h3>Wildlife</h3>
+
+            <p>
+                Discover the Big Five and explore
+                South Africa's famous national parks.
+            </p>
+
+            <a href="wildlife.html" class="button">
+                View Wildlife
+            </a>
         </article>
-    </div>
-</section>
+
+    </section>
+
+    <section class="facts">
+        <h2>Quick Facts About South Africa</h2>
+
+        <ul>
+            <li>11 Official Languages</li>
+            <li>Home to Table Mountain</li>
+            <li>Known as the Rainbow Nation</li>
+            <li>Famous for Safari Adventures</li>
+            <li>Three Capital Cities</li>
+        </ul>
+    </section>
+
+</main>
 
 <footer>
-    <p>&copy; 2026 Tamara McKnight</p>
+    <p>
+        &copy; <span id="year"></span>
+        | Tamara McKnight | WDD 131 | South Africa Travel & Culture Guide
+    </p>
+
     <a href="references.html">References</a>
 </footer>
 
 </body>
 </html>
+```
