@@ -1,40 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display&family=Poppins:wght@400;600;700&display=swap');
 
+/* General Page Styling */
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #F8F9FA;
-    color: #333;
+    background-color: #f4f7f5;
     margin: 0;
-    padding: 20px;
-    line-height: 1.6;
+    padding: 0;
+    color: #333;
 }
 
-h1, h2, h3 {
+/* Header */
+header {
+    background: linear-gradient(135deg, #1B5E20, #2E7D32);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Main Content */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Section Cards */
+section {
+    background-color: white;
+    border-left: 8px solid #F4A261;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+}
+
+/* Headings */
+h2 {
     font-family: 'Poppins', sans-serif;
     color: #1B5E20;
+    border-bottom: 3px solid #F4A261;
+    padding-bottom: 0.5rem;
 }
 
-header {
+h3 {
+    color: #2E7D32;
+}
+
+/* Lists */
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Color Schema Boxes */
+.color-box {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    margin-left: 10px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+
+.green {
     background-color: #1B5E20;
-    color: white;
-    padding: 20px;
-    text-align: center;
 }
 
-section {
-    background: white;
-    padding: 20px;
-    margin: 20px 0;
+.orange {
+    background-color: #F4A261;
+}
+
+.gray {
+    background-color: #F8F9FA;
+}
+
+/* Wireframes */
+pre {
+    background-color: #eef3ee;
+    padding: 1rem;
     border-radius: 8px;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
 }
 
-.accent {
-    color: #F4A261;
-}
-
+/* Footer */
 footer {
     background-color: #1B5E20;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
+```
