@@ -1,25 +1,44 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Wildlife - South Africa Travel Guide</title>
+    <title>Wildlife | South Africa Travel & Culture Guide</title>
 
+    <meta name="description"
+          content="Explore South Africa's incredible wildlife, national parks, and the famous Big Five animals.">
+
+    <meta name="author"
+          content="Tamara McKnight">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/main.css">
+
+    <!-- JavaScript -->
     <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <h1>Wildlife in South Africa</h1>
+    <h1>South Africa Travel & Culture Guide</h1>
+
+    <button id="menu-button">☰ Menu</button>
 
     <nav>
         <ul class="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="culture.html">Culture</a></li>
+            <li><a href="culture.html">Culture & Food</a></li>
             <li><a href="wildlife.html">Wildlife</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -27,13 +46,142 @@
 </header>
 
 <main>
-    <h2>The Big Five</h2>
 
-    <div id="wildlife-container"></div>
+    <section class="hero-text">
+        <h2>Wildlife of South Africa</h2>
+
+        <p>
+            South Africa is one of the world's top safari destinations,
+            home to diverse ecosystems and some of Africa's most iconic animals.
+        </p>
+    </section>
+
+    <section class="welcome">
+        <h2>The Big Five</h2>
+
+        <p>
+            The Big Five are the most famous animals found in South Africa:
+            Lion, Leopard, Rhino, Elephant, and Buffalo.
+        </p>
+    </section>
+
+    <section class="cards">
+
+        <article class="card">
+            <img src="images/Lion.jpg"
+                 alt="African Lion"
+                 loading="lazy">
+
+            <h3>Lion</h3>
+
+            <p>
+                Lions are powerful predators and are often called the
+                kings of the African savanna.
+            </p>
+        </article>
+
+        <article class="card">
+            <img src="images/Leopard.jpg"
+                 alt="African Leopard"
+                 loading="lazy">
+
+            <h3>Leopard</h3>
+
+            <p>
+                Leopards are elusive big cats known for their strength,
+                agility, and beautiful spotted coats.
+            </p>
+        </article>
+
+        <article class="card">
+            <img src="images/Rhino.jpg"
+                 alt="African Rhino"
+                 loading="lazy">
+
+            <h3>Rhino</h3>
+
+            <p>
+                South Africa is home to significant rhino populations and
+                plays an important role in rhino conservation.
+            </p>
+        </article>
+
+        <article class="card">
+            <img src="images/Elephant.jpg"
+                 alt="African Elephant"
+                 loading="lazy">
+
+            <h3>Elephant</h3>
+
+            <p>
+                African elephants are the largest land animals on Earth
+                and are highly intelligent and social.
+            </p>
+        </article>
+
+        <article class="card">
+            <img src="images/Buffalo.jpg"
+                 alt="African Buffalo"
+                 loading="lazy">
+
+            <h3>Buffalo</h3>
+
+            <p>
+                Buffalo are strong herd animals and one of the famous
+                members of the Big Five.
+            </p>
+        </article>
+
+    </section>
+
+    <section class="welcome">
+        <h2>Famous National Parks</h2>
+
+        <p>
+            South Africa's national parks offer visitors unforgettable
+            wildlife experiences and opportunities to see animals in
+            their natural habitats.
+        </p>
+    </section>
+
+    <section class="cards">
+
+        <article class="card">
+            <img src="images/kruger-park.jpg"
+                 alt="Kruger National Park"
+                 loading="lazy">
+
+            <h3>Kruger National Park</h3>
+
+            <p>
+                One of Africa's largest and most famous game reserves,
+                home to hundreds of wildlife species and the Big Five.
+            </p>
+        </article>
+
+        <article class="card">
+            <img src="images/Pilanesberg.jpg"
+                 alt="Pilanesberg Game Reserve"
+                 loading="lazy">
+
+            <h3>Pilanesberg Game Reserve</h3>
+
+            <p>
+                Located in an ancient volcanic crater, Pilanesberg is
+                a popular reserve known for excellent wildlife viewing where self-drive safaris are available or guided tours.
+            </p>
+        </article>
+
+    </section>
+
 </main>
 
 <footer>
-    <p>&copy; <span id="year"></span> | Tamara McKnight | WDD 131 | South Africa Travel & Culture Guide</p>
+    <p>
+        &copy; <span id="year"></span>
+        | Tamara McKnight | WDD 131 | South Africa Travel & Culture Guide
+    </p>
+
     <a href="references.html">References</a>
 </footer>
 
