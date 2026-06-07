@@ -1,25 +1,44 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact - South Africa Travel Guide</title>
+    <title>Contact | South Africa Travel & Culture Guide</title>
 
+    <meta name="description"
+          content="Contact the South Africa Travel & Culture Guide for travel information, tourism tips, and newsletter updates.">
+
+    <meta name="author"
+          content="Tamara McKnight">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/main.css">
+
+    <!-- JavaScript -->
     <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <h1>Contact Us</h1>
+    <h1>South Africa Travel & Culture Guide</h1>
+
+    <button id="menu-button">☰ Menu</button>
 
     <nav>
         <ul class="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="culture.html">Culture</a></li>
+            <li><a href="culture.html">Culture & Food</a></li>
             <li><a href="wildlife.html">Wildlife</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -29,32 +48,85 @@
 
 <main>
 
-    <h2>Get in Touch</h2>
+    <section class="hero-text">
+        <h2>Contact Us</h2>
 
-    <form id="contactForm">
-        <label>Full Name</label>
-        <input type="text" id="fullname" required>
+        <p>
+            We'd love to hear from you! Contact us for more information
+            about South Africa's destinations, culture, wildlife, and tourism.
+        </p>
+    </section>
 
-        <label>Email</label>
-        <input type="email" id="email" required>
+    <section class="contact-container">
 
-        <label>Message</label>
-        <textarea id="message" required></textarea>
+        <div class="contact-info">
+            <h3>More Information</h3>
 
-        <button type="submit">Send</button>
-    </form>
+            <p><strong>Phone:</strong> +27 84 879 0564</p>
+
+            <p><strong>Email:</strong> tmcknight88@yahoo.com</p>
+
+            <p><strong>Location:</strong> Johannesburg, South Africa</p>
+
+            <p>
+                Feel free to reach out with questions about travel,
+                attractions, culture, or wildlife experiences.
+            </p>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send a Message</h3>
+
+            <form id="contactForm">
+
+                <label for="fullname">Full Name</label>
+                <input type="text"
+                       id="fullname"
+                       name="fullname"
+                       required>
+
+                <label for="email">Email Address</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+                <label for="message">Message</label>
+                <textarea id="message"
+                          name="message"
+                          rows="6"
+                          required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </div>
+
+    </section>
 
     <section class="newsletter">
-        <h3>Newsletter</h3>
+        <h3>Subscribe to Our Newsletter</h3>
 
-        <input type="email" id="newsletterEmail" placeholder="Enter email">
+        <p>
+            Receive travel tips, destination updates, and South African
+            tourism news directly in your inbox.
+        </p>
+
+        <input type="email"
+               id="newsletterEmail"
+               placeholder="Enter your email address">
+
         <button id="subscribeBtn">Subscribe</button>
     </section>
 
 </main>
 
 <footer>
-    <p>&copy; <span id="year"></span> | Tamara McKnight | WDD 131 | South Africa Travel & Culture Guide</p>
+    <p>
+        &copy; <span id="year"></span>
+        | Tamara McKnight | WDD 131 | South Africa Travel & Culture Guide
+    </p>
+
     <a href="references.html">References</a>
 </footer>
 
